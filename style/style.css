@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    opacity: 1;
+    background-size: 34px 34px;
+    background-image:  repeating-linear-gradient(0deg, #364F6B, #364F6B 1.7000000000000002px, #F5F5F5 1.7000000000000002px, #F5F5F5);
+}
+
+main {
+    width: 700px;
+    background-color: #364F6B;
+    padding: 35px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+    z-index:10;
+}
+
+main h1 {
+    text-align: center;
+    color: #3FC1C9;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+main .error {
+    background-color: #FC5185;
+    color: #F5F5F5;
+    padding: 15px 20px;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 5px;
+    transition: .3s;
+    display: none;
+}
+
+main .task-header {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .task-header input {
+    flex:1;
+    padding:14px 20px;
+    font-size: 16px;
+    color: #364F6B;
+    font-weight: bold;
+    border: 0;
+    outline:0;
+    border-radius: 5px;
+    transition: .3s
+}
+
+main .task-header button {
+    background-color: #3FC1C9;
+    padding: 15px;
+    margin-left:5px;
+    border: 0;
+    border-radius: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+main .task-header button:hover {
+    box-shadow: 0 0px 10px rgba(225, 225, 225, .5);
+}
+
+main .task-header button i {
+    font-size: 15px;
+    color: #F5F5F5
+}
+
+main .task-body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+main .task-body ul li {
+    background-color: #3FC1C9;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-radius:5px;
+    
+}
+
+main .task-body ul li.completed label{
+    text-decoration: line-through;
+    opacity: 0.7;
+    transition: .3s;
+}
+
+main .task-body ul li input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+main .task-body ul li label {
+    flex:1;
+    padding: 0 20px;
+    color: #F5F5F5;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+
+main .task-body ul li button {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #FC5185;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 25px;
+}
+
+main .task-body ul li button:hover {
+    transform: scale(1.1);
+}
